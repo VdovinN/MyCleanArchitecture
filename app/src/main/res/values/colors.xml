@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="generalBlue">#2f5382</color>
+    <color name="generalGray">#1D1E22</color>
+    <color name="generalBlack">#171A21</color>
+    <color name="lightBlue">#9DD8F6</color>
+    <color name="dateGrayBackground">#969696</color>
+    <color name="dateGrayText">#424242</color>
+    <color name="dividerColor">#21242B</color>
+    <color name="darkBlue">#007AFF</color>
+    <color name="detailTextGrayColor">#9A9AA4</color>
+    <color name="detailDateGrayColor">#71707B</color>
+
+</resources>

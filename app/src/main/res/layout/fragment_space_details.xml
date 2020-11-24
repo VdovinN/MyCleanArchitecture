@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    tools:context=".presentation.screens.detail.SpaceDetailsFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/detail_toolbar" />
+
+    <ImageView
+        android:id="@+id/spaceImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintDimensionRatio="1:1"
+        android:src="@drawable/ic_play"
+        app:layout_constraintBottom_toTopOf="@id/spaceImageView"
+        app:layout_constraintEnd_toEndOf="@id/spaceImageView"
+        app:layout_constraintStart_toStartOf="@id/spaceImageView"
+        app:layout_constraintTop_toBottomOf="@id/spaceImageView" />
+
+    <TextView
+        android:id="@+id/spaceDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:textAllCaps="true"
+        android:textColor="@color/detailDateGrayColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceImageView"
+        tools:text="10 FEBRUARY 2019" />
+
+    <TextView
+        android:id="@+id/spaceDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="4dp"
+        android:scrollbarThumbVertical="@color/detailTextGrayColor"
+        android:scrollbars="vertical"
+        android:textColor="@color/detailTextGrayColor"
+        android:textSize="12sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/spaceRocketNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceDateTextView"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="@string/lorem_ipsum" />
+
+    <TextView
+        android:id="@+id/spaceRocketNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/lightBlue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/spacePayloadMassTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceDetailsTextView"
+        tools:text="FALCON 1" />
+
+    <TextView
+        android:id="@+id/spacePayloadMassTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/lightBlue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/spaceWikiTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spaceRocketNameTextView"
+        tools:text="100000 kg" />
+
+    <TextView
+        android:id="@+id/spaceWikiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:padding="4dp"
+        android:text="@string/wikipedia"
+        android:textColor="@color/darkBlue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spacePayloadMassTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
