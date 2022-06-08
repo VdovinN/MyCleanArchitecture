@@ -5,8 +5,9 @@ import com.example.mycleanarchitecture.data.repository.SpaceRepository
 import com.example.mycleanarchitecture.domain.Space
 import com.example.mycleanarchitecture.presentation.util.functional.Either
 import com.example.mycleanarchitecture.usecase.base.UseCase
+import javax.inject.Inject
 
-class GetSpaceDetailsUseCase(
+class GetSpaceDetailsUseCase @Inject constructor(
     private val spaceRepository: SpaceRepository
 ) : UseCase<Space, GetSpaceDetailsUseCase.Params>() {
 
